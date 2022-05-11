@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="lof_chatsystem_new_message">
+        <observer name="lof_slack_integration_new_chat" instance="Lof\ChatNotification\Observer\NewChat" />
+    </event>
+</config>

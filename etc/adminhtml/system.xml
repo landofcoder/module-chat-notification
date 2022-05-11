@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="lof_slack_integration" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="new_chat_notification" translate="label" type="text" sortOrder="55" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>New Chat Message Notification</label>
+                <field id="enable" translate="label comment" type="checkbox" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <frontend_model>Lof\SlackIntegration\Block\Adminhtml\System\Config\Checkbox</frontend_model>
+                </field>
+                <field id="channel" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Channel</label>
+                </field>
+                <field id="color" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Color</label>
+                    <frontend_model>Lof\SlackIntegration\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

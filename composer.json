@@ -1,0 +1,28 @@
+{
+  "name": "landofcoder/module-chat-notification-slack",
+  "description": "Magento 2 Notify New Chat to Slack Integration extension",
+  "require": {
+    "landofcoder/module-all": "^1.*",
+    "landofcoder/module-slack-integration": "^2.*",
+    "landofcoder/module-chat-system": "^1.*"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Landofcoder",
+      "email": "info@landofcoder.com",
+      "homepage": "https://landofcoder.com",
+      "role": "eCommerce Solution provider"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Lof\\ChatNotification\\": ""
+    }
+  }
+}
